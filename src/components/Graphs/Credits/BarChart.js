@@ -11,6 +11,12 @@ import {
 } from "recharts";
 
 const data = [
+   {
+      name: "Dec",
+      uv: 5000,
+      pv: 2400,
+      amt: 2400
+    },
   {
     name: "Jan",
     uv: 5000,
@@ -43,40 +49,8 @@ const data = [
   },
   {
     name: "Jun",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500
-  },
-  {
-    name: "Jul",
-    uv: 6490,
-    pv: 8300,
-    amt: 2100
-  },
-  {
-   name: "Aug",
-   uv: 7490,
-   pv: 5300,
-   amt: 2100
- },
- {
-   name: "Sep",
-   uv: 9490,
-   pv: 2300,
-   amt: 2100
- },
- {
-   name: "Oct",
-   
- },
- {
-   name: "Nov",
-   
- },
- {
-   name: "Dec",
-   
- }
+    
+  }
 ];
 
 
@@ -85,7 +59,7 @@ export default function BarCharCrypt() {
   
   return (
     <BarChart
-      width={1000}
+      width={window.innerWidth/2.7}
       height={300}
       data={data}
       margin={{

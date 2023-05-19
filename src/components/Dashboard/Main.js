@@ -108,9 +108,9 @@ function DashboardContent() {
                 variant="h6"
                 color="inherit"
                 noWrap
-                sx={{ flexGrow: 1,  }}
+                sx={{ flexGrow: 1,  textShadow:' rgba(0, 0, 0, 0.51) 1px 0 10px;',fontSize:'25px'}}
               >
-                Dolbik Digital
+                D&D Finance App
               </Typography>
               <IconButton color="inherit">
                 <Badge badgeContent={4} color="secondary">

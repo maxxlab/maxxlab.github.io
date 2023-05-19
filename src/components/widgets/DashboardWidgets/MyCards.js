@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import { Card, CardContent, CardMedia } from "@mui/material";
 import { Typography } from "@mui/material";
+import UncontrolledExample from "../../Graphs/DashboardGrafs/Carouser";
 
 export default function MyCards() {
   return (
@@ -20,8 +21,9 @@ export default function MyCards() {
       }}
     >
       <CardContent>
-        <Typography sx={{ marginBottom: "15px", fontSize: '24pt' }}>My Cards</Typography>
-        <Divider />
+        <Typography sx={{ marginBottom: "15px", fontSize: '26pt', fontWeight: 700, color: 'rgb(84, 84, 84)' }}>My Cards</Typography>
+        <Divider sx={{backgroundColor:'rgba(151, 151, 151, 0.25)',height:2,marginBottom:'15px'}}/>
+        <UncontrolledExample/>
       </CardContent>
     </Card>
   );

@@ -4,9 +4,8 @@ import Divider from "@mui/material/Divider";
 import { Card, CardContent, CardMedia } from "@mui/material";
 import { Typography } from "@mui/material";
 import PieGraphDepoits from "../../Graphs/Deposits/PieChart"
-import PieGraphCredits from '../../Graphs/Crypt/PieChart';
 
-export default function Credit() {
+export default function DepositWidg() {
   return (
     <Card
       sx={{
@@ -24,10 +23,11 @@ export default function Credit() {
       }}
     >
       <CardContent>
-        <Typography sx={{ fontSize: '26pt',fontWeight: 600, opacity:0.8  }}>Credit</Typography>
+        <Typography sx={{ fontSize: '26pt',fontWeight: 600, opacity:0.8  }}>Deposit</Typography>
         <Divider sx={{backgroundColor:'rgba(151, 151, 151, 0.25)' , height: 2}}/>
-        <PieGraphCredits/>
+        <PieGraphDepoits/>
       </CardContent>
     </Card>
   )
 }
+

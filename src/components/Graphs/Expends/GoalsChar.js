@@ -13,12 +13,14 @@ let now3 = 80;
 const style = {
   backgroundColor: '#D1FFFC',
   opacity: 0.8,
+  marginBottom: '20px'
 };
 
 let styleOne = {
   backgroundColor: back,
   opacity: 0.8,
-  width: 400,
+  width: '100%',
+  marginBottom: '20px'
 };
 
 export default function GoalsCharExp() {
@@ -29,11 +31,10 @@ export default function GoalsCharExp() {
    
 
   return (
-    <div style={{ width: 500 }}>
+    <div style={{ width: '90%', margin:'0 auto' , marginTop:'15%'}}>
       <div className='box'>
-        <ProgressBar variant={variant} style={{ ...styleOne, backgroundColor: background }} now={progress} /> {progress}
+        <ProgressBar variant={variant} style={{ ...styleOne, backgroundColor: background }} now={progress} />
       </div>
-
       <br />
       <ProgressBar variant="info" style={style} now={now2} />
       <br />

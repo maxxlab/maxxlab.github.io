@@ -3,7 +3,7 @@ import React, { Component, useState } from 'react';
 import "./styles/table.css";
 
 
-class TableDataBase extends Component {
+class TableDataBaseofDeposits extends Component {
    
   constructor(props) {
     super(props);
@@ -15,7 +15,7 @@ class TableDataBase extends Component {
 
   componentDidMount() {
    const client = axios.create({
-      baseURL: "https://back-end-hack.up.railway.app/api/operations/CREDIT/all",
+      baseURL: "https://back-end-hack.up.railway.app/api/operations/DEPOSIT/all",
     });
     client.get("").then((response) => {
       this.setState({ Table: response.data })
@@ -67,4 +67,4 @@ class TableDataBase extends Component {
   }
 }
 
-export default TableDataBase;
+export default TableDataBaseofDeposits;

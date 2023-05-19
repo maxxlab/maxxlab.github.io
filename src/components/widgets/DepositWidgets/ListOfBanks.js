@@ -1,8 +1,37 @@
+// import React from "react";
+// import Box from "@mui/material/Box";
+// import Divider from "@mui/material/Divider";
+// import { Card, CardContent, CardMedia } from "@mui/material";
+// import { Typography } from "@mui/material";
+
+// export default function ListOfBanks() {
+//   return (
+//     <>
+//       <Card
+//         sx={{
+//           marginTop: "30px",
+//           maxWidth: "504px",
+//           minWidth: "504px",
+//           minHeight: "882px",
+//           borderRadius: "20px",
+//           boxShadow: 12,
+//           margin: 2,
+//           border: "1px solid black",
+//         }}
+//       >
+//         <CardContent></CardContent>
+//       </Card>
+//     </>
+//   );
+// }
+
+
+
 
 import React, { Component } from 'react';
-import "./styles/ListOfCryptos.css";
+import "./styles/ListOfBanks.css";
 
-class ListOfCryptos extends Component {
+class ListOfBanksOfDepoits extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -51,75 +80,28 @@ class ListOfCryptos extends Component {
             image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png'
          },
          {
-            id: 7,
-            name: 'TRCsd',
-            price_change_percentage_24h: -10.002,
-            current_price: 2000,
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png'
-         },
-         {
-          id: 8,
-          name: 'TRCsd',
-          price_change_percentage_24h: -10.002,
-          current_price: 2000,
+          id: 6,
+          name: 'ARBsd',
+          price_change_percentage_24h: 0.002,
+          current_price: 2020,
           image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png'
-       },
-       {
-        id: 9,
-        name: 'TRCsd',
-        price_change_percentage_24h: -10.002,
-        current_price: 2000,
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png'
-     },
-     {
-      id: 10,
-      name: 'TRCsd',
-      price_change_percentage_24h: -10.002,
-      current_price: 2000,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png'
-   },
-   {
-    id: 11,
-    name: 'TRCsd',
-    price_change_percentage_24h: -10.002,
-    current_price: 2000,
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png'
- }
+       }
       ]
     };
   }
 
 
-  componentDidMount() {
-   let url ='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en';
-   //  let url ='https://api.coingecko.com/api/v3/coins/list';
-   //  let url = 'https://api.polygon.io/v3/reference/tickers/types?asset_class=crypto&apiKey=Fn0PwswoV4RTs5EB760VdIUWUxfFR17O'
-
-
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    // Обробка даних у форматі JSON
-    this.setState({ List: data })
-   console.log(data);
-  })
-  .catch(error => {
-    // Обробка помилки
-    console.error('Помилка отримання даних:', error);
-  });
-    }
-
-
   render() {
    const { List,fakeList } = this.state;
    console.log(fakeList);
+  
 
     return (
-      <div className='crypto-box'>
-        <ul className='ul-crypto'>
+      <div className='bank-box'>
+        <ul className='ul-bank'>
         {
-           List.map(current =>(
-              <li key={current.id}  className={current.id % 2 === 0 ? 'red-box li-element' : 'green-box li-element'}>
+           fakeList.map(current =>(
+              <li key={current.id}  className={current.id % 2 === 0 ? 'red-box li-element-bank' : 'green-box li-element-bank'}>
                  <div className='logo'>
                      <img className='btc-img' src={current.image} alt="" />
                      <div className='info'>
@@ -141,4 +123,4 @@ fetch(url)
   }
 }
 
-export default ListOfCryptos;
+export default ListOfBanksOfDepoits;

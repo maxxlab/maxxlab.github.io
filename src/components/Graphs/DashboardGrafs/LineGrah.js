@@ -1,5 +1,5 @@
 import "./styles/LineGraph.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AreaChart,
   Area,
@@ -8,70 +8,57 @@ import {
   CartesianGrid,
   Tooltip
 } from "recharts";
+import axios from "axios";
 
-const data = [
-  {
-    name: "Page A",
-    uv: 1000,
-    pv: 2400,
-    amt: 2400
-  },
-  {
-    name: "Page B",
-    uv: 1400,
-    pv: 1398,
-    amt: 2210
-  },
-  {
-    name: "Page C",
-    uv: 2100,
-    pv: 9800,
-    amt: 2290
-  },
-  {
-    name: "Page D",
-    uv: 1880,
-    pv: 3908,
-    amt: 2000
-  },
-  {
-    name: "Page E",
-    uv: 2190,
-    pv: 4800,
-    amt: 2181
-  },
-  {
-    name: "Page F",
-    uv: 2090,
-    pv: 3800,
-    amt: 2500
-  },
-  {
-    name: "Page G",
-    uv: 2190,
-    pv: 40300,
-    amt: 0
-  },
-  {
-   name: "Page G",
-   
- },
- {
-   name: "Page G",
-   
- }
-];
+
+const client = axios.create({
+   baseURL: "https://back-end-hack.up.railway.app/api/transactions/INCOME",
+ });
 
 export default function LineGraphdashboard() {
+   const [balanceLine, setBalanceLine] = useState([]);
+   const data = [
+      {
+        name: "Jan",
+        uv: 500,
+      },
+      {
+        name: "Feb",
+        uv: 620,
+      },
+      {
+        name: "Mar",
+        uv: 400,
+    
+      },
+      {
+        name: "Apr",
+        uv: 480,
+    
+      },
+      {
+        name: "May",
+        uv: balanceLine,
+    
+      }
+    ];
+
+  useEffect(() => {
+    client.get("").then((response) => {
+      setBalanceLine(response.data);
+      console.log(response.data);
+      // console.log(response)
+    });
+  }, []);
   return (
     <AreaChart
-      width={500}
-      height={400}
+      width={window.innerWidth/3.5}
+      height={300}
       data={data}
       margin={{
         top: 10,
-        right: 30,
-        left: 0,
+        right: 0,
+        left: 10,
         bottom: 0
       }}
     >

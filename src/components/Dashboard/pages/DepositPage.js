@@ -8,20 +8,24 @@ import Comparison from "../../widgets/DashboardWidgets/Comparison";
 import TransactionHistoryWidget from "../../widgets/DashboardWidgets/TransactionHistoryWidget";
 import ListOfBanks from "../../widgets/CreditsWidgets/ListOfBanks";
 import TableDataBase from "../../widgets/CreditsWidgets/TableDatabase";
+import BankDeposit from "../../widgets/DepositWidgets/Bank";
+import DepositWidg from "../../widgets/DepositWidgets/Credit";
+import TableDataBaseofDeposits from "../../widgets/DepositWidgets/TableDatabase";
+import ListOfBanksOfDepoits from "../../widgets/DepositWidgets/ListOfBanks";
 
 export default function DepositPage() {
   return (
     <Box sx={{ marginTop: "30px",padding: "20px", flexGrow: 1 }}>
       <Box sx={{display: 'flex',justifyContent: "space-around", margin:'0 auto'}}>
         <Box sx={{width: '50%'}}>
-          <Credit />
-          <Bank />  
+          <DepositWidg />
+          <BankDeposit />  
         </Box>
-          <ListOfBanks />
+          <ListOfBanksOfDepoits />
       </Box>
       
       <Box>
-        <TableDataBase/>
+        <TableDataBaseofDeposits/>
       </Box>
       
 

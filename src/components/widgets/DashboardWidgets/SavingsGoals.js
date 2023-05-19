@@ -12,7 +12,7 @@ export default function SavingsGoals() {
         marginTop: "30px",
         maxWidth: "623px",
         minWidth: "55%",
-        maxHeight: "314px",
+        maxHeight: "444px",
         borderRadius: "20px",
         boxShadow: 12,
         margin: 2,
@@ -20,9 +20,9 @@ export default function SavingsGoals() {
         backdropFilter: 'blur(5px)'
       }}
     >
-      <CardContent>
-        <Typography sx={{ marginBottom: "15px", color: '#3C3C43', opacity: '0.6' }}>My Saving Goals</Typography>
-        <Divider />
+      <CardContent sx={{marginTop:2,marginLeft:2}}>
+        <Typography sx={{fontWeight:700,fontSize:22, marginBottom: "15px", color: ' rgb(80, 80, 80)'}}>My Saving Goals</Typography>
+        <Divider sx={{backgroundColor:'rgba(151, 151, 151, 0.25)' , height: 2}}/>
         <GoalsCharDash/>
       </CardContent>
     </Card>

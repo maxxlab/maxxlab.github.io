@@ -10,7 +10,7 @@ import TextField from "@mui/material/TextField";
 import Select from "@mui/material/Select";
 import Button from "@mui/material/Button";
 
-export default function Bank() {
+export default function BankDeposit() {
   const [bank, setBank] = React.useState("");
 
   const handleChange = (event) => {
@@ -35,7 +35,7 @@ export default function Bank() {
         <CardContent>
           <Box>
             <Box>
-            <Typography sx={{ fontSize: '26pt',fontWeight: 600, opacity:0.8  }}>Take Credit</Typography>
+            <Typography sx={{ fontSize: '26pt',fontWeight: 600, opacity:0.8  }}>Take Deposit</Typography>
             </Box>
             <Divider sx={{backgroundColor:'rgba(151, 151, 151, 0.25)' , height: 2}}/>
             <Box>
@@ -79,12 +79,10 @@ export default function Bank() {
                   color: "white",
                   marginBottom: "0px",
                   width:'100%',
-                  marginTop:'40px',
-                  fontSize:'20px',
-                  fontWeight:'700'
+                  marginTop:'40px'
                 }}
               >
-                Take
+                Buy
               </Button>
             </Box>
           </Box>

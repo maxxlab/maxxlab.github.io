@@ -1,0 +1,11 @@
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+   background-color: #4FE4DB;
+   border-radius: 10px;
+}
+
+@media (max-width: 1450px) {
+   .card-pix{
+      padding-top: 10%;
+   }
+}

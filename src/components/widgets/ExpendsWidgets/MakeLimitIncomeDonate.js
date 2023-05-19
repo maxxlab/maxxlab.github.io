@@ -19,12 +19,13 @@ export default function MakeLimitIncomeDonate() {
         borderRadius: "20px",
         boxShadow: 12,
         background: 'rgba(255, 255, 255, 0.7)',
-        backdropFilter: 'blur(5px)'
+        backdropFilter: 'blur(5px)',
+        padding: '20px'
       }}
     >
       <CardContent>
         <Box sx={{ display: "flex", justifyContent: "space-around" }}>
-          <MakeSmth makeText="Make Limit" />
+          <MakeSmth  makeText="Make Limit" />
           <MakeSmth makeText="Make Income" />
           <MakeSmth makeText="Make Donate" />
         </Box>

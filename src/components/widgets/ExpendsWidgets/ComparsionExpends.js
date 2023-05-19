@@ -17,12 +17,14 @@ export default function ComparisonExpends(props) {
         borderRadius: "20px",
         boxShadow: 12,
         background: 'rgba(255, 255, 255, 0.7)',
-        backdropFilter: 'blur(5px)'
+        backdropFilter: 'blur(5px)',
+        paddingTop: 2,
+        paddingLeft: 2,
       }}
     >
       <CardContent>
-        <Typography sx={{ color: '#3C3C43', opacity: '0.6' }}>Comparison</Typography>
-        <Typography sx={{ fontSize: '16pt' }}>2021 (38,079$)</Typography>
+        <Typography sx={{fontSize:15, fontWeight: 600, color: '#3C3C43', opacity: '0.8' }}>Comparison</Typography>
+        <Typography sx={{ fontWeight: 600 ,fontSize: '22pt', opacity:0.8 }}>2021 (38,079$)</Typography>
         <BarCharExp/>
       </CardContent>
     </Card>

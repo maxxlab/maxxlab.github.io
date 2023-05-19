@@ -10,62 +10,46 @@ import {
 } from "recharts";
 
 const data = [
-  {
-    name: "Page A",
-    uv: 1000,
-    pv: 2400,
-    amt: 2400
-  },
-  {
-    name: "Page B",
-    uv: 1400,
-    pv: 1398,
-    amt: 2210
-  },
-  {
-    name: "Page C",
-    uv: 2100,
-    pv: 9800,
-    amt: 2290
-  },
-  {
-    name: "Page D",
-    uv: 1880,
-    pv: 3908,
-    amt: 2000
-  },
-  {
-    name: "Page E",
-    uv: 2190,
-    pv: 4800,
-    amt: 2181
-  },
-  {
-    name: "Page F",
-    uv: 2090,
-    pv: 3800,
-    amt: 2500
-  },
-  {
-    name: "Page G",
-    uv: 2190,
-    pv: 40300,
-    amt: 0
-  },
-  {
-   name: "Page G",
-   
- },
- {
-   name: "Page G",
-   
- }
-];
+   {
+     name: "Jan",
+     uv: 10000,
+     pv: 2400,
+     amt: 2400
+   },
+   {
+     name: "Feb",
+     uv: 14000,
+     pv: 1398,
+     amt: 2210
+   },
+   {
+     name: "Mar",
+     uv: 12000,
+     pv: 9800,
+     amt: 2290
+   },
+   {
+     name: "Apr",
+     uv: 18080,
+     pv: 3908,
+     amt: 2000
+   },
+   {
+     name: "May",
+     uv: 19190,
+     pv: 4800,
+     amt: 2181
+   },
+   {
+      name: "Jun",
+
+    }
+ ];
 
 export default function LineGraphCrypto() {
   return (
     <AreaChart
-      width={700}
+      width={window.innerWidth/2.7}
       height={300}
       data={data}
       margin={{
