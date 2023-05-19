@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.0e893250.css",
-    "main.js": "/static/js/main.d7f766a7.js",
+    "main.css": "/static/css/main.9ac789cb.css",
+    "main.js": "/static/js/main.a128a389.js",
     "static/media/Balance20.png": "/static/media/Balance20.fc1b88debd7d4674a503.png",
     "index.html": "/index.html",
-    "main.0e893250.css.map": "/static/css/main.0e893250.css.map",
-    "main.d7f766a7.js.map": "/static/js/main.d7f766a7.js.map"
+    "main.9ac789cb.css.map": "/static/css/main.9ac789cb.css.map",
+    "main.a128a389.js.map": "/static/js/main.a128a389.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e893250.css",
-    "static/js/main.d7f766a7.js"
+    "static/css/main.9ac789cb.css",
+    "static/js/main.a128a389.js"
   ]
 }
