@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Bebas+Neue&family=Inspiration&family=Montserrat:ital,wght@0,600;1,100&family=Raleway&family=Roboto+Mono:wght@500&family=Roboto:wght@300&display=swap');
+
+.red {
+   color: rgba(255, 0, 0, 0.529);
+   text-align: left;
+
+ }
+ 
+ .green {
+   color: rgba(0, 128, 0, 0.619);
+   text-align: left;
+
+ }
+ .imageCur{
+    width: 100px;
+ }
+
+ .li-element-bank{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background: #F9FAFF; */
+    margin: 0px;
+    padding: 30px;
+ }
+ .li-element-bank:last-child{
+    margin-bottom: 10px;
+    border-radius: 20px;
+ }
+
+ /* .img-graf{
+    height: 100px;
+ } */
+
+ .btc-img{
+    width: 60px;
+    margin-right: 20px;
+ }
+ .logo{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 200px;
+ }
+ .h1-tetx{
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 22px;
+text-align: left;
+
+color: #54575B;
+width: 140px;
+
+ }
+
+ .curr-price-list{
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 25px;
+   line-height: 18px;
+   text-align: right;
+   
+   color: #5f656c;
+   
+ }
+
+ .ul-bank{
+    margin-left: 0px;
+   margin-block-start: 0em;
+    width: 100%;
+   background: #FFFFFF;
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+   border-radius: 20px;background: #FFFFFF;
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+   border-radius: 20px;
+   padding-inline-start: 0px;
+   margin: 0;
+ }
+
+ .red-box{
+    background-color: #F9FAFF;
+ }
+
+ .bank-box{
+    width: 40%;
+    margin-bottom: 10px;
+ }

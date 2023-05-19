@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Bebas+Neue&family=Inspiration&family=Montserrat:ital,wght@1,100&family=Raleway&family=Roboto+Mono:wght@500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Bebas+Neue&family=Inspiration&family=Montserrat:ital,wght@0,600;1,100&family=Raleway&family=Roboto+Mono:wght@500&family=Roboto:wght@300&display=swap');
+.li-elemnt-price{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   width: 17%;
+   height: 84px;
+   background: #FFFFFF;
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+   border-radius: 20px;
+   background: rgba(255, 255, 255, 0.7);
+   backdrop-filter: blur(5px);
+   
+}
+.box{
+   width: 100%;
+   margin: 0 auto;
+   margin-top: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0;
+   padding-right: 15px;
+}
+
+.img-dollar{
+   width: 60px;
+   margin-left: 20px;
+   margin-right: 10px;
+}
+
+.curr-box{
+   display:flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+.span-title{
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 29px;
+
+color: #565656;
+
+}
+
+.span-number{
+   font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 29px;
+
+color: #A3A3A3;
+
+}
+
+.hello{
+   width: 98%;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
